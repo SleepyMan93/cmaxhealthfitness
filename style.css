@@ -4,3 +4,36 @@
     height: 100vh;
     overflow: hidden;
   }
+
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    justify-content: center;
+  }
+
+  #imageBox {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    position: relative;
+  }
+
+  .modal-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  #quooxButton {
+    position: absolute;
+    z-index: 100;
+    bottom: 10vh;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: #5fff00;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+  }
+
+  .sign-up img {
+    width: 180px;
+    height: 120px;
+  }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!--
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -17,27 +18,46 @@
           </a>
         </div>
     </nav>
+    -->
     <section>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/colin_carousel_1.jpg" class="d-block w-100" alt="CMAX Logo">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/colin_carousel_2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/colin_carousel_3.jpg" class="d-block w-100" alt="...">
+        <div id="imageBox" class="container-fluid">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="7500">
+                        <img src="assets/images/colin_carousel_3.jpg" class="d-block w-100" alt="CMAX Logo">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="7500">
+                        <img src="assets/images/colin_carousel_2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="7500">
+                        <img src="assets/images/colin_carousel_1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="modal-container container-fluid">
+                        <!-- Button trigger modal -->
+                        <button id="quooxButton" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            SECURE YOUR SPOT NOW
+                        </button>
+                            
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </section>
 
