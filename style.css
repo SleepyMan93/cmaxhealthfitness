@@ -1,25 +1,25 @@
-.carousel-item img {
+  .carousel-item img {
     object-fit: cover;
     object-position: center;
     height: 100vh;
     overflow: hidden;
-  }
+}
 
   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
     justify-content: center;
-  }
+}
 
   #imageBox {
     padding-left: 0px !important;
     padding-right: 0px !important;
     position: relative;
-  }
+}
 
   .modal-container {
     display: flex;
     align-items: stretch;
     justify-content: center;
-  }
+}
 
   #quooxButton {
     position: absolute;
@@ -28,12 +28,25 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border-color: #5fff00;
     background-color: rgb(0, 0, 0);
     color: whitesmoke;
-  }
+}
 
   .sign-up img {
     width: 180px;
     height: 120px;
-  }
+}
+
+  .modal-content iframe,  .modal-content object,  .modal-content embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 50rem;
+    width: 100%;
+    height: 100%;
+}
+
+  .modal-dialog-centered {
+    display: flex;
+    align-items: stretch;
+}
