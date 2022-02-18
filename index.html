@@ -8,17 +8,31 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://kit.fontawesome.com/6d00f659a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="assets/images/nav_logo.jpg" alt="Nav Logo" width="90" height="60" class="d-inline-block align-text-top">
-          </a>
+    <nav class="navbar navbar-light">
+        <div class="container grid side-pad">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/cmax_nav_logo.png" alt="Nav Logo" class="d-inline-block align-text-top">
+            </a>
+            <div class="social-container col-1-12 hide-on-mobile">
+                <ul class="social-media-icons">            
+                    <li>
+                        <a class="social-colour" href="https://twitter.com">
+                            <i class="fa fa-twitter fa-xl"></i>                
+                        </a>
+                    </li>            
+                    <li>
+                        <a class="social-colour" href="https://facebook.com">
+                            <i class="fa fa-facebook fa-xl"></i>                
+                        </a>
+                    </li>
+                </ul> 
+            </div>
         </div>
     </nav>
-    -->
     <section>
         <div id="imageBox" class="container-fluid">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -40,7 +54,7 @@
                             
                         <!-- Modal -->
                         <div class="modal fade" id="cmaxModal" tabindex="-1" aria-labelledby="cmaxModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-sm-down">
+                            <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
                                 <div class="modal-content">
                                     <div class="loading"></div>
                                     <iframe src="" frameborder="0"></iframe>
@@ -74,7 +88,7 @@
     <script>
         $('#quooxButton').click(function() {
             $('#cmaxModal').on('shown.bs.modal',function() {    
-                $(this).find('iframe').attr('src','https://cmaxhealthfitness.fitnesshub.net/c/r/1mnuCO/UPhzT1DA/')
+                $(this).find('iframe').attr('src','https://cmaxhealthfitness.fitnesshub.net/c/r/1mnuCO/UPhzT1DA/?modal=1')
             })
             $('#cmaxModal').modal({show:true})
             $('iframe').load(function() {
