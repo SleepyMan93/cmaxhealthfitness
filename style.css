@@ -111,6 +111,12 @@
     background-color: #000;
 }
 
+/* Main */
+.site-text {
+  text-align: center;
+  padding-top: 5px;
+}
+
 /* Footer */
   .top-footer-text {
     font-size: 30px;
