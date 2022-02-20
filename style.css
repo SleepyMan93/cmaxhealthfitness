@@ -1,6 +1,6 @@
 /* Universal Styling */ 
   body {
-    background-color: #000;
+    background: whitesmoke;
 }
 
   .side-pad {
@@ -48,17 +48,23 @@
     position: absolute;
     z-index: 100;
     width: 100%;
-    background: #1e1c1d;;
+    background: #1e1c1d;
 }
 
   .navbar-brand img {
     width: 180.4px;
     height: 61.6px;
 }
-  
-  .carousel-item img {
+
+/* Carousel */
+
+  .carousel-inner {
+    background: #1e1c1d
+}
+
+  .img-sizing {
     object-fit: cover;
-    object-position: center;
+    object-position: 50% top;
     height: 95vh;
     overflow: hidden;
 }
@@ -105,7 +111,6 @@
   .site-footer {
     background-color: #1e1c1d;
     color: #fff;
-    margin-top: 40px;
     text-align: center;
     padding-top: 5px;
 }
