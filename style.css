@@ -10,8 +10,7 @@
 
   .grid {
     width: 100%;
-    max-width: 1140px;
-    min-width: 755px;
+    max-width: 1350px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -45,18 +44,11 @@
     padding: 25px 5px;
 }
 
-  .grid {
-  width: 100%;
-  max-width: 1140px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
   .navbar {
     position: absolute;
     z-index: 100;
     width: 100%;
-    background: rgba(0,0,0,0.85);
+    background: #1e1c1d;;
 }
 
   .navbar-brand img {
@@ -105,13 +97,32 @@
 }
 
 /* Footer */
-.top-footer-text {
-  font-size: 30px;
-  margin-bottom: 0px;
+  .top-footer-text {
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+  .site-footer {
+    background-color: #1e1c1d;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+  .site-footer-image {
+    margin-bottom: 30px;
+    width: 185px;
+}
+
+  .align-center {
+    clear: both;
+    display: block;
+    margin: 0 auto;
 }
 
 .arrow-icon {
-  
+  color: #5fff00;
 }
 
 /* Quoox CSS */
