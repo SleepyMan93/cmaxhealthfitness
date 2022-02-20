@@ -63,11 +63,15 @@
 }
 
   .img-sizing {
-    object-fit: cover;
-    object-position: 50% top;
     height: 95vh;
     overflow: hidden;
 }
+
+ .img-sizing img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% top;
+ }
 
   #imageBox {
     padding-left: 0px !important;
