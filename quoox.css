@@ -1,0 +1,35 @@
+.qbody {
+    background-color: rgb(0 0 0);
+    margin: auto !important;
+}
+
+  .qbody .inner-wrapper .content-body {
+    margin-top: 12rem !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    border: none !important;
+    padding: 50px !important;
+    background-color: rgb(0 0 0);
+}
+
+  h1 {
+    margin-top: revert;
+    color: floralwhite;
+}
+
+  .btn .btn-primary {
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+}
+
+  body .btn-primary {
+    color: #000;
+}
+
+  label {
+  color: floralwhite;
+}
+
+  .input-group-addon {
+    color: #212529;
+}
