@@ -131,10 +131,9 @@
   .banner-sizing-2 {
     display: flex;
     height: 15vh;
-    padding-left: 5vw !important;
+    padding-left: 2vw !important;
     overflow: hidden;
     background-color: #000000;
-    padding: 0px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -163,7 +162,7 @@
 }
 
   .button-logo {
-    height: 6vh;
+    height: 5vh;
 }
 
   .btn-check:focus+.btn, .btn:focus {
@@ -174,7 +173,7 @@
   #quooxButton {
     z-index: 100;
     bottom: 10vh;
-    width: 10vw;
+    width: 20vw;
     height: 6vh;
     background-color: #000000;
     border-color: white;
@@ -282,7 +281,7 @@
 
 /* Media Queries */
 
-/* Medium Screns */
+/* Small Screns */
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
@@ -290,10 +289,14 @@
     margin-right: auto;
     margin-top: 6rem;
   }
+
+  #quooxButton {
+    width: 15vw;
+  }
 }
 
-/* Large Screens */
-@media (max-width: 755px) {
+/* Medium Screens */
+@media (max-width: 768px) {
   .navbar-brand img {
     width: 128.86px;
     height: 44px;
@@ -303,11 +306,26 @@
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
+  .button-logo {
+    height: 4vh;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 992px) {
+  .button-logo {
+    height: 6vh;
+}
 }
 
 /* XL Screens */
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 850px;
+  }
+
+  #quooxButton {
+    width: 12vw;
   }
 }
