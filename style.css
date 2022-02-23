@@ -198,6 +198,17 @@
     font-size: 1vw;
 }
 
+  .sliding-text {
+    z-index: 100;
+    position: absolute;
+    bottom: 10vh;
+    color: white;
+    padding: 0px;
+    border-radius: 0px;
+    font-size: 1vw;
+    text-align: center;
+  }
+
   p {
     color: white;
 }
