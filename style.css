@@ -1,7 +1,7 @@
 /* Universal Styling */ 
   body {
     background: black;
-    font-family: 'Antonio', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
   .side-pad {
@@ -73,7 +73,7 @@
 
 /* Carousel */
   .img-sizing {
-    height: 95vh;
+    height: 96vh;
     overflow: hidden;
 }
 
@@ -97,35 +97,72 @@
 
   .text-panel {
     width: 100%;
-    overflow: hidden;
-    height: 5vh;
+    display: flex;
+    align-items: center;
+    height: 4vh;
     background-color: white;
+    padding: 0px;
+    padding-top: 4px;
+}
+
+  .small-text-holder {
+    display: flex;
+    overflow: hidden;
+    justify-content: flex-start;
 }
 
   .sliding-text {
     z-index: 100;
     bottom: 10vh;
-    font-size: 2vw;
+    font-size: 1.5vh;
+    font-weight: 500;
     text-align: center;
-    background-color: white;
     color: black;
     float:left;
-    margin: 2px;
+    margin: 1px;
+    white-space: nowrap;
 }
 
   .marquee {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 5vh;
-    animation: scroll 10s linear infinite;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: stretch;
+    -moz-animation: scroll 80s linear infinite;
+    -webkit-animation: scroll 80s linear infinite;
+    animation: scroll 80s linear infinite;
+    transform-style: preserve-3d;
 }
 
 /* Make it move */
-  @keyframes scroll{
-    0% {left:800px;}
-    100% {left:-800px;}
-  }
+  @-moz-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-90vw);
+    }
+}
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-90vw);
+    }
+}
+  @keyframes scroll {
+    0% {
+      -moz-transform: translateX(0vw);
+      -webkit-transform: translateX(0vw);
+      transform: translateX(0vw)
+    }
+    100% {
+      -moz-transform: translateX(-90vw);
+      -webkit-transform: translateX(-90vw);
+      transform: translateX(-90vw);
+    }
+}
 
   .arrow-container {
     display: flex;
@@ -153,7 +190,6 @@
   .site-text-2 {
     text-align: center;
     padding: 0px;
-    height: 75vh;
 }
 
   .img-banner {
@@ -357,6 +393,15 @@
   #quooxButton {
     width: 15vw;
   }
+
+  .sliding-text {
+    font-size: 1.6vh;
+    margin: 1px;
+  }
+
+  .text-panel {
+    padding-top: 2px;
+  }
 }
 
 /* Medium Screens */
@@ -376,10 +421,29 @@
   }
 }
 
+@media (min-width: 768px) {
+  .sliding-text {
+    font-size: 2.2vh;
+  }
+
+  .img-sizing {
+    height: 96vh;
+    overflow: hidden;
+  }
+}
+
 /* Large Screens */
 @media (min-width: 992px) {
   .button-logo {
     height: 4vh;
+}
+  .img-sizing {
+    height: 95vh;
+    overflow: hidden;
+}
+  .text-panel {
+    height: 5vh;
+    padding-top: 5px;
 }
 }
 
@@ -392,4 +456,68 @@
   #quooxButton {
     width: 11vw;
   }
+}
+
+@media (min-width: 1300px) {
+  @-moz-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-80vw);
+    }
+}
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-80vw);
+    }
+}
+  @keyframes scroll {
+    0% {
+      -moz-transform: translateX(0vw);
+      -webkit-transform: translateX(0vw);
+      transform: translateX(0vw)
+    }
+    100% {
+      -moz-transform: translateX(-80vw);
+      -webkit-transform: translateX(-80vw);
+      transform: translateX(-80vw);
+    }
+}
+}
+
+/* XXL Screens */
+
+@media (min-width: 1600px) {
+  @-moz-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-60vw);
+    }
+}
+  @-webkit-keyframes scroll {
+    0% {
+      transform: translateX(0vw);
+    }
+    100% {
+      transform: translateX(-60vw);
+    }
+}
+  @keyframes scroll {
+    0% {
+      -moz-transform: translateX(0vw);
+      -webkit-transform: translateX(0vw);
+      transform: translateX(0vw)
+    }
+    100% {
+      -moz-transform: translateX(-60vw);
+      -webkit-transform: translateX(-60vw);
+      transform: translateX(-60vw);
+    }
+}
 }
