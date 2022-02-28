@@ -316,7 +316,7 @@
   }
 
   .secure-text {
-    line-height: 0.9;
+    line-height: 1;
     text-transform: uppercase;
     font-size: 4vh;
     margin-bottom: 10vh;
@@ -328,7 +328,7 @@
   }
 
     .secure-text-2 {
-      line-height: 0.9;
+      line-height: 1;
       text-transform: uppercase;
       font-size: 2vh;
       font-weight: 100;
