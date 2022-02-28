@@ -319,11 +319,25 @@
     line-height: 0.9;
     text-transform: uppercase;
     font-size: 4vh;
-    font-weight: 200;
+    margin-bottom: 10vh;
+    font-weight: 600;
+    text-align: left;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: rgb(255, 255, 255);
   }
+
+    .secure-text-2 {
+      line-height: 0.9;
+      text-transform: uppercase;
+      font-size: 2vh;
+      font-weight: 100;
+      text-align: left;
+      color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px white;
+      -webkit-text-fill-color: rgb(255, 255, 255);
+    }
+  
 
   #quooxButton {
     z-index: 100;
