@@ -407,7 +407,7 @@
 /* Footer */
   .top-footer-text {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
   .site-footer {
@@ -415,6 +415,11 @@
     color: #fff;
     text-align: center;
     padding-top: 5px;
+    border-top: 1px solid #ffffff1c;
+}
+
+  .fa.fa-envelope-o {
+    font-weight: 700 !important;
 }
 
 .footer-details {
@@ -422,8 +427,8 @@
 }
 
   .site-footer-image {
-    margin-bottom: 30px;
-    width: 185px;
+    margin-bottom: 50px;
+    width: 270px;
 }
 
   .align-center {
