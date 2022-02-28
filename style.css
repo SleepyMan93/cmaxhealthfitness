@@ -278,6 +278,15 @@
     align-content: flex-end;
 }
 
+  .title-banner-3 {
+    background-color: #000;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+
   .title-2 {
     display: flex;
     justify-content: flex-start;
@@ -287,9 +296,9 @@
 
   .title-font {
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 3.6vh;
     line-height: 0.4;
-    font-weight: 800;
+    font-weight: 900;
     color: black;
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: black;
@@ -297,7 +306,7 @@
 
   .title-font-2 {
     text-transform: uppercase;
-    font-size: 4vh;
+    font-size: 3.6vh;
     font-weight: 800;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px white;
@@ -319,7 +328,6 @@
     line-height: 1;
     text-transform: uppercase;
     font-size: 4vh;
-    margin-bottom: 10vh;
     font-weight: 800;
     text-align: left;
     color: rgb(255, 255, 255);
@@ -381,7 +389,7 @@
     overflow: hidden;
     width: -webkit-fill-available;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 .img-sizing-3 {
@@ -389,7 +397,7 @@
   overflow: hidden;
   width: -webkit-fill-available;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
   .info-box {
@@ -503,7 +511,7 @@
 
   .title-font {
     text-transform: uppercase;
-    font-size: 9vw;
+    font-size: 8w;
   }
 
   .tag-line {
@@ -512,7 +520,7 @@
   
   .title-font-2 {
     text-transform: uppercase;
-    font-size: 9vw;
+    font-size: 8vw;
   }
 }
 
@@ -613,11 +621,11 @@
     font-size: 9vh;
   }
   .img-sizing-2 {
-    height: 80vh;
+    height: 90vh;
   }
 
   .img-sizing-3 {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
