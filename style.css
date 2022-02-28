@@ -10,6 +10,10 @@
     align-items: flex-start !important;
 }
 
+  .row {
+    --bs-gutter-x: 0rem;
+  }
+
   .grid {
     width: 100%;
     max-width: 1350px;
@@ -188,6 +192,8 @@
     text-align: center;
     padding-top: 0px;
     height: 20vh;
+    padding: 0px;
+    max-width: 2500px;
 }
 
   .site-text-2 {
@@ -200,10 +206,9 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    border-top: 2px #5fff00 solid;
+    border-bottom: 2px #5fff00 solid;
     background-image: url(assets/images/cmax_signup.jpg);
     background-position: right;
-    margin: 10px;
 }
 
   .banner-sizing {
@@ -218,7 +223,6 @@
   .banner-sizing-2 {
     display: flex;
     height: 15vh;
-    padding-left: 2vw !important;
     overflow: hidden;
     justify-content: flex-start;
     align-items: center;
@@ -226,7 +230,10 @@
 
   .tag-line {
     text-transform: uppercase;
-    color: white;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
 
   .schedule-title {
@@ -256,22 +263,58 @@
     box-shadow: 0 0 0 0;
 }
 
-  .title-banner {
+  .title-banner-2 {
     background-color: #000;
     display: flex;
+    height: 35vh;
     align-items: center;
-    height: 20vh;
+    justify-content: flex-start;
+    align-content: flex-end;
 }
 
-  .title {
+  .title-2 {
     display: flex;
     justify-content: flex-start;
-}
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
   .title-font {
     text-transform: uppercase;
-    font-size: 5vh;
+    font-size: 4vh;
+    line-height: 0.4;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
 }
+
+  .title-font-2 {
+    text-transform: uppercase;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+  .secure-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 69vh;
+    color: white;
+    padding: 10rem;
+  }
+
+  .secure-text {
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+  }
 
   #quooxButton {
     z-index: 100;
@@ -292,6 +335,7 @@
 
   .spacing {
     --bs-gutter-x: 0rem;
+    overflow: hidden;
     margin-bottom: 0px;
 }
 
@@ -303,15 +347,12 @@
     color: rgb(255, 255, 255);
   }
 
-  .collage img {
-    border-bottom: 2px solid #5fff00;
-}
-
   .img-sizing-2 {
-    height: 56vh;
+    height: 55vh;
     overflow: hidden;
     width: -webkit-fill-available;
     object-fit: cover;
+    object-position: top;
 }
 
   .info-box {
@@ -342,8 +383,8 @@
     margin: 0 auto;
 }
 
-.arrow-icon {
-  color: #ffffff;
+  .arrow-icon {
+    color: #ffffff;
 }
 
 /* Quoox CSS */
@@ -386,6 +427,17 @@
 
 /* Media Queries */
 
+/* Title Sizing */
+@media (min-width: 487px) {
+  .title-font {
+    font-size: 5vh
+  }
+
+  .title-font-2 {
+    font-size: 5vh
+  }
+}
+
 /* Small Screns */
 @media (min-width: 576px) {
   .modal-dialog {
@@ -410,7 +462,13 @@
 
   .title-font {
     text-transform: uppercase;
-    font-size: 11vw;
+    font-size: 9vw;
+  }
+
+  
+  .title-font-2 {
+    text-transform: uppercase;
+    font-size: 9vw;
   }
 }
 
@@ -440,6 +498,18 @@
     height: 96vh;
     overflow: hidden;
   }
+
+  .title-font {
+    font-size: 8vh;
+  }
+
+  .title-font-2 {
+    font-size: 8vh;
+  }
+
+  .img-sizing-2 {
+    height: 45vh;
+  }
 }
 
 /* Large Screens */
@@ -457,7 +527,14 @@
   }
   .title-font {
     text-transform: uppercase;
-    font-size: 7vh;
+    font-size: 9vh;
+  }
+  .title-font-2 {
+    text-transform: uppercase;
+    font-size: 9vh;
+  }
+  .img-sizing-2 {
+    height: 55vh;
   }
 }
 
@@ -474,6 +551,14 @@
   .title-font {
     text-transform: uppercase;
     font-size: 9vh;
+  }
+
+  .title-font-2 {
+    text-transform: uppercase;
+    font-size: 9vh;
+  }
+  .img-sizing-2 {
+    height: 65vh;
   }
 }
 
