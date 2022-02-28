@@ -86,7 +86,8 @@
 
   .down-arrow {
     position: absolute;
-    bottom: 2vh;
+    bottom: 15vh;
+    right: 11vw;
     z-index: 1000;
 }
 
@@ -147,7 +148,7 @@
       transform: translateX(0vw);
     }
     100% {
-      transform: translateX(0vw);
+      transform: translateX(-90vw);
     }
 }
   @-webkit-keyframes scroll {
@@ -155,7 +156,7 @@
       transform: translateX(0vw);
     }
     100% {
-      transform: translateX(0vw);
+      transform: translateX(-90vw);
     }
 }
   @keyframes scroll {
@@ -165,16 +166,19 @@
       transform: translateX(0vw)
     }
     100% {
-      -moz-transform: translateX(0vw);
-      -webkit-transform: translateX(0vw);
-      transform: translateX(0vw);
+      -moz-transform: translateX(-90vw);
+      -webkit-transform: translateX(-90vw);
+      transform: translateX(-90vw);
     }
 }
 
   .arrow-container {
     display: flex;
-    align-items: stretch;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+    bottom: 10vh;
+    right: 6vw;
+    position: absolute;
 }
 
   .sign-up img {
@@ -200,10 +204,6 @@
     text-align: center;
     padding: 0px;
 }
-
-  .collage-2 {
-    object-position: ;
-  }
 
   .img-banner {
     height: 15vh;
@@ -341,16 +341,22 @@
 
   #quooxButton {
     z-index: 100;
-    bottom: 10vh;
-    width: 20vw;
-    height: 8vh;
-    background-color: #000000;
-    border-color: white;
+    width: 200px;
+    height: 200px;
+    padding-top: 10px !important;
+    background-color: #ffffff;
     color: black;
     padding: 0px;
-    border-radius: 0px;
+    border-radius: 50%;
     font-size: 1vw;
 }
+
+  .button-text {
+    line-height: 1;
+    font-size: 3vh;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 
   p {
     color: white;
@@ -486,10 +492,6 @@
     margin-top: 6rem;
   }
 
-  #quooxButton {
-    width: 15vw;
-  }
-
   .sliding-text {
     font-size: 1.6vh;
     margin: 1px;
@@ -601,10 +603,6 @@
     max-width: 850px;
   }
 
-  #quooxButton {
-    width: 11vw;
-  }
-
   .title-font {
     text-transform: uppercase;
     font-size: 9vh;
@@ -662,7 +660,7 @@
       transform: translateX(0vw);
     }
     100% {
-      transform: translateX(-60vw);
+      transform: translateX(-50vw);
     }
 }
   @-webkit-keyframes scroll {
@@ -670,7 +668,7 @@
       transform: translateX(0vw);
     }
     100% {
-      transform: translateX(-60vw);
+      transform: translateX(-50vw);
     }
 }
   @keyframes scroll {
@@ -680,9 +678,9 @@
       transform: translateX(0vw)
     }
     100% {
-      -moz-transform: translateX(-60vw);
-      -webkit-transform: translateX(-60vw);
-      transform: translateX(-60vw);
+      -moz-transform: translateX(-50vw);
+      -webkit-transform: translateX(-50vw);
+      transform: translateX(-50vw);
     }
 }
 
