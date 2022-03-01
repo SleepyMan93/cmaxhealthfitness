@@ -84,6 +84,11 @@
     overflow: hidden;
 }
 
+  .img-sizing-bottom {
+    height: 96vh;
+    overflow: hidden;
+}
+
   .down-arrow {
     position: absolute;
     bottom: 15vh;
@@ -96,6 +101,12 @@
     object-fit: cover;
     object-position: 50% top;
  }
+
+  .img-sizing-bottom img {
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
 
   #imageBox {
     padding-left: 0px !important;
@@ -272,8 +283,8 @@
   .title-banner-2 {
     background-color: #000;
     display: flex;
-    height: 55vh;
-    align-items: center;
+    height: 19vh;
+    align-items: flex-end;
     justify-content: flex-start;
     align-content: flex-end;
 }
@@ -281,8 +292,8 @@
   .title-banner-3 {
     background-color: #000;
     display: flex;
-    height: 50vh;
-    align-items: center;
+    height: 20vh;
+    align-items: flex-start;
     justify-content: flex-start;
     align-content: flex-end;
 }
@@ -327,8 +338,8 @@
   .secure-text {
     line-height: 1;
     text-transform: uppercase;
-    font-size: 4vh;
-    font-weight: 800;
+    font-size: 2vh;
+    font-weight: 200;
     text-align: left;
     color: rgb(255, 255, 255);
     -webkit-text-stroke: 1px white;
@@ -414,7 +425,7 @@
     background-color: #000000;
     color: #fff;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 55px;
     border-top: 1px solid #ffffff1c;
 }
 
@@ -484,15 +495,23 @@
 /* Title Sizing */
 @media (min-width: 487px) {
   .title-font {
-    font-size: 5vh
+    font-size: 4.5vh
   }
 
   .title-font-2 {
-    font-size: 5vh
+    font-size: 4.5vh
   }
 
   .tag-line {
     font-size: 2.7vh;
+  }
+
+  .secure-text {
+    font-size: 3vh;
+  }
+
+  .title-banner-3 {
+    margin-top: 30px;
   }
 }
 
@@ -516,7 +535,7 @@
 
   .title-font {
     text-transform: uppercase;
-    font-size: 8w;
+    font-size: 8vw;
   }
 
   .tag-line {
@@ -556,12 +575,17 @@
     overflow: hidden;
   }
 
+  .img-sizing-bottom {
+    height: 96vh;
+    overflow: hidden;
+  }
+
   .title-font {
-    font-size: 8vh;
+    font-size: 7vh;
   }
 
   .title-font-2 {
-    font-size: 8vh;
+    font-size: 7vh;
   }
 
   .img-sizing-2 {
@@ -575,38 +599,56 @@
   .tag-line {
     font-size: 4vh;
   }
+
+  .title-banner-2 {
+    margin-top: 90px;
+  }
 }
 
 /* Large Screens */
 @media (min-width: 992px) {
-    .button-logo {
-      height: 4vh;
-  }
-    .img-sizing {
-      height: 95vh;
-      overflow: hidden;
-  }
-    .text-panel {
-      height: 5vh;
-      padding-top: 5px;
-  }
+  .button-logo {
+    height: 4vh;
+}
+  .img-sizing {
+    height: 95vh;
+    overflow: hidden;
+}
+
+  .img-sizing-bottom {
+    height: 95vh;
+    overflow: hidden;
+}
+
+  .text-panel {
+    height: 5vh;
+    padding-top: 5px;
+}
+
   .title-font {
     text-transform: uppercase;
     font-size: 9vh;
-  }
+}
+
   .title-font-2 {
     text-transform: uppercase;
     font-size: 9vh;
-  }
+}
+
   .img-sizing-2 {
     height: 55vh;
-  }
+}
+
   .img-sizing-3 {
     height: 55vh;
-  }
+}
 
   .tag-line {
     font-size: 5.3vh;
+  }
+
+  .secure-text {
+      font-size: 3vh;
   }
 }
 
@@ -631,6 +673,10 @@
 
   .img-sizing-3 {
     height: 90vh;
+  }
+
+  .secure-text {
+    font-size: 4vh;
   }
 }
 
@@ -698,6 +744,11 @@
 }
 
   .img-sizing {
+    height: 95vh;
+    overflow: hidden;
+}
+
+  .img-sizing-bottom {
     height: 95vh;
     overflow: hidden;
 }
