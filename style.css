@@ -283,6 +283,7 @@
   .title-banner-2 {
     background-color: #000;
     display: flex;
+    margin-bottom: 15px;
     height: 19vh;
     align-items: flex-end;
     justify-content: flex-start;
@@ -507,11 +508,15 @@
   }
 
   .secure-text {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   .title-banner-3 {
     margin-top: 30px;
+  }
+
+  .title-banner-2 {
+    margin-bottom: 0px;
   }
 }
 
@@ -601,7 +606,7 @@
   }
 
   .title-banner-2 {
-    margin-top: 90px;
+    margin-top: 50px;
   }
 }
 
