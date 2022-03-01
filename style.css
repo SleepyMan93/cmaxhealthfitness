@@ -32,9 +32,14 @@
     font-size: 4rem;
 }
 
+  a:hover {
+    color: #ffffff;
+}
+
 /* Navbar */
-  ul .social-media-icons {
+  .social-media-icons {
   margin: 0;
+  padding-top: 10px;
   text-align: right;
   list-style: none;
   margin-top: auto;
@@ -74,8 +79,7 @@
 }
 
   .navbar-brand img {
-    width: 180.4px;
-    height: 61.6px;
+    height: 102.6px;
 }
 
 /* Carousel */
@@ -96,16 +100,16 @@
     z-index: 1000;
 }
 
-  .img-sizing img {
-    height: 100%;
+  .img-sizing-first img {
+    height: 96vh;
     object-fit: cover;
-    object-position: 50% top;
- }
+    object-position: -474px;
+}
 
-  .img-sizing-bottom img {
-    height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+ .img-sizing-second img {
+  height: 96vh;
+  object-fit: cover;
+  object-position: -357px;
 }
 
   #imageBox {
@@ -361,20 +365,21 @@
 
   #quooxButton {
     z-index: 100;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding-top: 10px !important;
-    background-color: #ffffff;
-    color: black;
+    background-color: #000000;
+    color: white;
     padding: 0px;
+    border: 2px solid white;
     border-radius: 50%;
     font-size: 1vw;
 }
 
   .button-text {
     line-height: 1;
-    font-size: 3vh;
-    font-weight: 300;
+    font-size: 2vh;
+    font-weight: 400;
     text-transform: uppercase;
   }
 
@@ -419,7 +424,7 @@
 /* Footer */
   .top-footer-text {
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
   .site-footer {
@@ -435,7 +440,7 @@
 }
 
 .footer-details {
-  font-weight: 300;
+  font-weight: 400;
 }
 
   .site-footer-image {
@@ -551,13 +556,24 @@
     text-transform: uppercase;
     font-size: 8vw;
   }
+
+  .top-footer-text {
+    margin-bottom: 50px;
+  }
+
+  .site-footer-image {
+    width: 216px;
+  }
+
+  .footer-details {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /* Medium Screens */
 @media (max-width: 768px) {
   .navbar-brand img {
-    width: 128.86px;
-    height: 44px;
+    height: 97px;
   }
 
   .navbar {
@@ -608,6 +624,14 @@
   .title-banner-2 {
     margin-top: 50px;
   }
+
+  .img-sizing-first img {
+    object-position: center;
+  }
+  
+  .img-sizing-second img {
+    object-position: center;
+  }
 }
 
 /* Large Screens */
@@ -615,12 +639,12 @@
   .button-logo {
     height: 4vh;
 }
-  .img-sizing {
+  .img-sizing-first img {
     height: 95vh;
     overflow: hidden;
 }
 
-  .img-sizing-bottom {
+  .img-sizing-second img {
     height: 95vh;
     overflow: hidden;
 }
@@ -682,6 +706,15 @@
 
   .secure-text {
     font-size: 4vh;
+  }
+
+  .button-text {
+    font-size: 3vh;
+  }
+
+  #quooxButton {
+    height: 200px;
+    width: 200px;
   }
 }
 
