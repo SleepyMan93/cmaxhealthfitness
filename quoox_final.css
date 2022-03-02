@@ -1,0 +1,42 @@
+.qbody {
+    background-color: rgb(0 0 0);
+    margin: auto !important;
+}
+
+  .qbody .inner-wrapper .content-body {
+    margin-top: 1rem !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    border: none !important;
+    padding: 28px !important;
+    background-color: rgb(0 0 0);
+}
+
+  #client-interest-header-container {
+    display: block !important;
+    height: 92px !important;
+    width: 164px !important;
+    margin: auto !important;
+    margin-bottom: 31px !important;
+    background-image: url(https://cdn.quoox.com/logos/2948/645babb2-db0e-4f98-b47f-cc0898d0ea86/dashboard_logo.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+  h1 {
+    margin-top: revert;
+    color: floralwhite;
+}
+
+  .btn.btn-primary, .btn.btn-primary:active:focus {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    padding: 10px !important;
+}
+
+  label {
+  color: floralwhite;
+}
+
+  .input-group-addon {
+    color: #212529;
+}
