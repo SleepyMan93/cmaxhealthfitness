@@ -12,18 +12,23 @@
     background-color: rgb(0 0 0);
 }
 
+  #client-interest-header-container {
+    display: block;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-image: url(https://cdn.quoox.com/logos/2948/645babb2-db0e-4f98-b47f-cc0898d0ea86/dashboard_logo.png);
+    background-repeat: no-repeat;
+}
+
   h1 {
     margin-top: revert;
     color: floralwhite;
 }
 
-  .btn .btn-primary {
-    background-color: rgb(253, 253, 253);
+  .btn.btn-primary, .btn.btn-primary:active:focus {
+    background-color: rgb(253, 253, 253) !important;
     padding: 10px;
-}
-
-  body .btn-primary {
-    color: #000;
 }
 
   label {
