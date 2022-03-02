@@ -5,7 +5,7 @@
 }
 
   .side-pad {
-    padding-left: 0px;
+    padding-left: 20px;
     padding-right: 20px;
     align-items: flex-start !important;
 }
@@ -34,6 +34,10 @@
 
   a:hover {
     color: #ffffff;
+}
+
+  i {
+    padding: 23px 23px;
 }
 
 /* Navbar */
@@ -79,7 +83,12 @@
 }
 
   .navbar-brand img {
-    height: 102.6px;
+    height: 75.6px;
+    margin-top: 21px;
+}
+
+.fa-4x {
+  font-size: 3.4em !important;
 }
 
 /* Carousel */
@@ -203,6 +212,18 @@
 
   .modal-content iframe,  .modal-content object,  .modal-content embed {
     min-height: 39.6rem;
+    background-color: #000;
+}
+
+  .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+  opacity: 0.8;
+  align-self: end;
+  width: 2em;
+  height: 2em;
+}
+
+  .modal-content {
     background-color: #000;
 }
 
@@ -389,6 +410,7 @@
 
   .spacing {
     --bs-gutter-x: 0rem;
+    border-bottom: 2px solid white;
     overflow: hidden;
     margin-bottom: 0px;
 }
@@ -440,7 +462,7 @@
 }
 
 .footer-details {
-  font-weight: 600;
+  font-weight: 400;
 }
 
   .site-footer-image {
@@ -573,7 +595,7 @@
 /* Medium Screens */
 @media (max-width: 768px) {
   .navbar-brand img {
-    height: 97px;
+    height: 62px;
   }
 
   .navbar {
@@ -594,6 +616,10 @@
   .img-sizing {
     height: 96vh;
     overflow: hidden;
+  }
+
+  .fa-4x {
+    font-size: 4em !important;
   }
 
   .img-sizing-bottom {
@@ -705,7 +731,7 @@
   }
 
   .secure-text {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
   .button-text {

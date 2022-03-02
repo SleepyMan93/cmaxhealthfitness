@@ -41,3 +41,9 @@
   .input-group-addon {
     color: #212529;
 }
+
+@media (min-width: 576px) {
+  .qbody .inner-wrapper .content-body {
+    margin-top: 8rem !important;
+  }
+}
