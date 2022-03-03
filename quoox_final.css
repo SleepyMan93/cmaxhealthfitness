@@ -42,7 +42,7 @@
     color: #212529;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .qbody .inner-wrapper .content-body {
     margin-top: 8rem !important;
   }
